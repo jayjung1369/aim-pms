@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource">
+		<property value="oracle.jdbc.driver.OracleDriver" name="driverClassName"/>
+		<property value="jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(LOAD_BALANCE=OFF)(FAILOVER=ON)(ADDRESS=(PROTOCOL=TCP)(HOST=10.141.71.13)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=10.141.71.14)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=UNIXDEV)(FAILOVER_MODE=(TYPE=SELECT)(METHOD=BASIC)(retries=10)(delay=5))))" name="url"/>
+		<property value="t1fabmgr" name="username"/>
+		<property value="adm1210" name="password"/>
+		<property value="100" name="maxActive"/>
+		<property value="100" name="maxIdle"/>
+		<property value="1000" name="maxWait"/>
+		<property value="true" name="defaultAutoCommit"/>
+	</bean>
+	
+	<!-- 5.2 Mapper Resource-->
+		<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactoryBean">
+			<property name="mapperLocations" value="classpath*:boe/b7/**/**/*.xml"/>
+			<property name="dataSource" ref="dataSource"/>
+		</bean>
+		
+		
+	<!-- 5.3 SqlSessionFactoryBuilder().build(DriverManager,Mapper Resource-->
+	<bean class="org.mybatis.spring.SqlSessionTemplate" id="sqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactoryBean"/>
+	</bean>
+</beans>
