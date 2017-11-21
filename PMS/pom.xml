@@ -16,7 +16,7 @@
 
 	<repositories>
 		<repository>
-			<id>mesir-repo</id>
+			<id>mesir-repo</id>  
 			<url>http://mesir.googlecode.com/svn/trunk/mavenrepo</url>
 		</repository>
 	</repositories>
