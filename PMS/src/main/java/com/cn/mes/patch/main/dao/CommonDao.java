@@ -1,4 +1,4 @@
-package boe.b7.main.dao;
+package com.cn.mes.patch.main.dao;
 
 import java.util.HashMap;
 import java.util.List;

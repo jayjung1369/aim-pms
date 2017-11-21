@@ -1,4 +1,4 @@
-package boe.b7.common;
+package com.cn.mes.patch.common;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

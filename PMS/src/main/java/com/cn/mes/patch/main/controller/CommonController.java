@@ -1,4 +1,4 @@
-package boe.b7.main.controller;
+package com.cn.mes.patch.main.controller;
 
 import java.util.logging.Logger;
 
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import boe.b7.main.service.CommonService;
+import com.cn.mes.patch.main.service.CommonService;
 
 @Controller
 public class CommonController {

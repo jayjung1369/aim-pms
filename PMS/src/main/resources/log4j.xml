@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="boe.b7.main">
+	<logger name="com.cn.mes.patch.main">
 		<level value="info" />
 	</logger>
 	

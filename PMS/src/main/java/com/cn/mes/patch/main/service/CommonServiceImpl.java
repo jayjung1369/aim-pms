@@ -1,4 +1,4 @@
-package boe.b7.main.service;
+package com.cn.mes.patch.main.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,8 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;
 
-import boe.b7.common.CommonUtil;
-import boe.b7.main.dao.CommonDao;
+import com.cn.mes.patch.common.CommonUtil;
+import com.cn.mes.patch.main.dao.CommonDao;
 
 @Service
 public class CommonServiceImpl implements CommonService {

@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
-encoding//src/main/java/boe/b7/main/controller/CommonController.java=UTF-8
-encoding//src/main/java/boe/b7/main/dao/CommonDaoImpl.java=UTF-8
-encoding//src/main/java/boe/b7/main/service/CommonServiceImpl.java=UTF-8
+encoding//src/main/java/com/cn/mes/patch/main/controller/CommonController.java=UTF-8
+encoding//src/main/java/com/cn/mes/patch/main/dao/CommonDaoImpl.java=UTF-8
+encoding//src/main/java/com/cn/mes/patch/main/service/CommonServiceImpl.java=UTF-8
 encoding//src/main/webapp/resources/css/images/LogInCss/common-back.css=UTF-8
 encoding//src/main/webapp/resources/css/images/LogInCss/common.css=UTF-8
