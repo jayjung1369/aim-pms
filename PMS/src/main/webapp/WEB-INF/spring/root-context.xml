@@ -17,7 +17,7 @@
 	
 	<!-- 5.2 Mapper Resource-->
 		<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactoryBean">
-			<property name="mapperLocations" value="classpath*:boe/b7/**/**/*.xml"/>
+			<property name="mapperLocations" value="classpath*:com/cn/**/**/*.xml"/>
 			<property name="dataSource" ref="dataSource"/>
 		</bean>
 		

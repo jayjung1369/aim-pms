@@ -24,7 +24,7 @@ public class CommonDaoImpl implements CommonDao {
 		hMap.put("password", password);
 
 		List<HashMap<String, Object>> resultMap = new ArrayList<HashMap<String, Object>>();
-		resultMap = sqlSession.selectList("b7.pms.dao.Mapper.checkLogIn", hMap);
+		resultMap = sqlSession.selectList("pms.dao.Mapper.checkLogIn", hMap);
 
 		return resultMap;
 	}
