@@ -42,7 +42,7 @@
     <div class="service-area">
         <!--title+bookmark시작-->
             <div class="service-area ci-box">
-            <a href="main.html" target="_parent"><img src="${root}/resources/images/LogInViewImages/login-logo.png" style="border:0"></a>  
+            <a href="${root}/main_new.jsp" target="_parent"><img src="${root}/resources/images/LogInViewImages/login-logo.png" style="border:0"></a>  
             </div>
         <!--title+bookmark끝-->
        
